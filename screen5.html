@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wiire.Me</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+ <link rel="stylesheet" href="css/font-awesome.css">  
+    <link href="css/wiire.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+     <link rel="stylesheet" href="css/fonts.css" />
+ 	<script src="js/jquery.min.js"></script>
+<link rel="stylesheet" href="css/animate.min.css">
+ 
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+  
+<script>
+$(document).ready(function(){
+    $("#radio-choice-1").click(function(){
+        $("#labour").hide();
+    });
+    $("#radio-choice-2").click(function(){
+        $("#labour").show();
+    });
+});
+</script>   
+</head>
+<body class="pages-overlay">
+
+<div  data-role="page" class="yellow-page">	
+
+<div data-role="header controlgroup" class="top-bar ui-header-fixed">
+  <a href="#leftpanel3" class="ui-link ui-btn ui-btn-left top-icon" data-iconpos="notext"><i class="fa fa-bars"></i></a>  
+	<div data-type="horizontal" class="header-title">
+      <h1 class="small-logo"><img src="images/logo.png"></h1>
+  		<h1 class="page-title">Team Information</h1>
+    </div>
+  <a href="#" class="ui-link ui-btn ui-btn-right top-icon" data-iconpos="notext"><i class="fa fa-ellipsis-v"></i></a>  
+ </div><!-- /header -->
+
+	<div role="main" class="ui-content yellow-container">
+    
+            <ul id="breadcrumbs" class="breadcrumbs">
+	<li><a href="#" target="_blank">Personal Info</a></li> 
+    &nbsp; / &nbsp;
+	<li><a href="#" class="current" target="_blank">Team Size</a></li>
+</ul>
+    
+    <div class="white-container animated fadeInRight">
+		<h2>Please select the size of your team.</h2>
+        
+
+<fieldset data-role="controlgroup">
+        <input name="radio-choice-1" id="radio-choice-1" value="choice-1" type="radio">
+        <label for="radio-choice-1"  class="no-base">I work alone.</label>
+        <input name="radio-choice-1" id="radio-choice-2" value="choice-2" type="radio">
+        <label for="radio-choice-2"  class="no-base">I have a team.</label>
+        
+        <div class="form-group member-slider" id="labour" style="display:none;">      
+        
+<!--      <label for="number-pattern" class="ui-hidden-accessible">No. of persons in your team</label>
+<input name="number" pattern="[0-9]*" min="0" id="number-pattern" value="" type="number" placeholder="No. of persons in your team" class="input-view">-->
+
+<input name="slider" id="slider" value="1" min="0" max="20" type="range" data-highlight="true" data-theme="b" data-track-theme="b">
+
+         </div>         
+</fieldset>
+
+ 
+          
+         
+
+<form method="get" action="screen6.html" class="page-button" target="_blank" data-transition="slidefade">
+  <button class="ui-btn ui-btn-b ui-corner-all">Next</button>
+</form>
+        
+        </div>
+        
+	</div><!-- /content -->
+
+<div data-role="navbar"  class="bottom-bar ui-footer-fixed">
+    <ul>
+                <li><a href="javascript: history.go(-1)" target="_blank" data-transition="slidefade"><i class="fa fa-arrow-circle-left"></i>Back</a></li>
+        <li><a href="screen1.html" target="_blank" data-transition="slidefade"><i class="fa fa-home"></i>Home</a></li>
+    </ul>
+</div>
+
+	    <div data-role="panel" data-theme="b" id="leftpanel3" class="menu-panel" data-position="left" data-display="overlay">
+                
+        <ul data-role="listview" class="menu-opt">
+            <li class="user-pic" id="user-pic"><a href="profile.html" target="_blank"><img src="images/contractor-photo.png" class="contractor-pic"><p>Contractor Name</p></a></li>
+                <li><a href="jobs1.html" target="_blank">My Jobs</a></li>
+               <li><a href="manage-team1.html" target="_blank">Manage Team</a></li>
+                <li><a href="services.html" target="_blank">Services</a></li>
+                <li><a href="work-areas.html" target="_blank">Work Areas</a></li>                
+                <li><a href="payment-details.html" target="_blank">Payment Details</a></li>
+                <li><a href="#">Logout</a></li>
+    
+            </ul>
+    </div><!-- /panel -->
+    
+    
+</div><!-- /page -->
+
+        
+
+</body>
+</html>

@@ -1,0 +1,330 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("../fonts/flaticon.eot");
+	src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../fonts/flaticon.woff") format("woff"),
+	url("../fonts/flaticon.ttf") format("truetype"),
+	url("../fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+    font-style: normal;
+}
+.flaticon-add133:before {
+	content: "\e000";
+}
+.flaticon-add186:before {
+	content: "\e001";
+}
+.flaticon-add30:before {
+	content: "\e002";
+}
+.flaticon-air12:before {
+	content: "\e003";
+}
+.flaticon-arrow26:before {
+	content: "\e004";
+}
+.flaticon-arrow395:before {
+	content: "\e005";
+}
+.flaticon-arrow446:before {
+	content: "\e006";
+}
+.flaticon-arrow483:before {
+	content: "\e007";
+}
+.flaticon-arrow487:before {
+	content: "\e008";
+}
+.flaticon-arrowhead7:before {
+	content: "\e009";
+}
+.flaticon-arrowhead9:before {
+	content: "\e00a";
+}
+.flaticon-arrowheads3:before {
+	content: "\e00b";
+}
+.flaticon-back36:before {
+	content: "\e00c";
+}
+.flaticon-backward4:before {
+	content: "\e00d";
+}
+.flaticon-bell84:before {
+	content: "\e00e";
+}
+.flaticon-bowl12:before {
+	content: "\e00f";
+}
+.flaticon-brick2:before {
+	content: "\e010";
+}
+.flaticon-cancel30:before {
+	content: "\e011";
+}
+.flaticon-carpentry:before {
+	content: "\e012";
+}
+.flaticon-commerce:before {
+	content: "\e013";
+}
+.flaticon-configure:before {
+	content: "\e014";
+}
+.flaticon-contacts13:before {
+	content: "\e015";
+}
+.flaticon-creditcard3:before {
+	content: "\e016";
+}
+.flaticon-cross108:before {
+	content: "\e017";
+}
+.flaticon-cross97:before {
+	content: "\e018";
+}
+.flaticon-delivery:before {
+	content: "\e019";
+}
+.flaticon-direction14:before {
+	content: "\e01a";
+}
+.flaticon-double28:before {
+	content: "\e01b";
+}
+.flaticon-electricity3:before {
+	content: "\e01c";
+}
+.flaticon-email5:before {
+	content: "\e01d";
+}
+.flaticon-expand22:before {
+	content: "\e01e";
+}
+.flaticon-facebook30:before {
+	content: "\e01f";
+}
+.flaticon-facebook55:before {
+	content: "\e020";
+}
+.flaticon-garbage21:before {
+	content: "\e021";
+}
+.flaticon-gas12:before {
+	content: "\e022";
+}
+.flaticon-google29:before {
+	content: "\e023";
+}
+.flaticon-home153:before {
+	content: "\e024";
+}
+.flaticon-home168:before {
+	content: "\e025";
+}
+.flaticon-home78:before {
+	content: "\e026";
+}
+.flaticon-key162:before {
+	content: "\e027";
+}
+.flaticon-laundry7:before {
+	content: "\e028";
+}
+.flaticon-leftarrow1:before {
+	content: "\e029";
+}
+.flaticon-left-arrow8:before {
+	content: "\e02a";
+}
+.flaticon-left222:before {
+	content: "\e02b";
+}
+.flaticon-lightbulbs:before {
+	content: "\e02c";
+}
+.flaticon-lightbulb58:before {
+	content: "\e02d";
+}
+.flaticon-lines7:before {
+	content: "\e02e";
+}
+.flaticon-locked59:before {
+	content: "\e02f";
+}
+.flaticon-logout9:before {
+	content: "\e030";
+}
+.flaticon-magnifying-glass32:before {
+	content: "\e031";
+}
+.flaticon-magnifying47:before {
+	content: "\e032";
+}
+.flaticon-male80:before {
+	content: "\e033";
+}
+.flaticon-menu51:before {
+	content: "\e034";
+}
+.flaticon-microwave3:before {
+	content: "\e035";
+}
+.flaticon-minisplit:before {
+	content: "\e036";
+}
+.flaticon-motherboard2:before {
+	content: "\e037";
+}
+.flaticon-network60:before {
+	content: "\e038";
+}
+.flaticon-notebook32:before {
+	content: "\e039";
+}
+.flaticon-painting54:before {
+	content: "\e03a";
+}
+.flaticon-pencil41:before {
+	content: "\e03b";
+}
+.flaticon-pencil90:before {
+	content: "\e03c";
+}
+.flaticon-pest:before {
+	content: "\e03d";
+}
+.flaticon-plug:before {
+	content: "\e03e";
+}
+.flaticon-plunger:before {
+	content: "\e03f";
+}
+.flaticon-previous11:before {
+	content: "\e040";
+}
+.flaticon-previous2:before {
+	content: "\e041";
+}
+.flaticon-radiation1:before {
+	content: "\e042";
+}
+.flaticon-receipt12:before {
+	content: "\e043";
+}
+.flaticon-refresh57:before {
+	content: "\e044";
+}
+.flaticon-refrigerator3:before {
+	content: "\e045";
+}
+.flaticon-reply18:before {
+	content: "\e046";
+}
+.flaticon-rewind44:before {
+	content: "\e047";
+}
+.flaticon-right-arrow26:before {
+	content: "\e048";
+}
+.flaticon-right-arrow6:before {
+	content: "\e049";
+}
+.flaticon-right11:before {
+	content: "\e04a";
+}
+.flaticon-right133:before {
+	content: "\e04b";
+}
+.flaticon-rubbish:before {
+	content: "\e04c";
+}
+.flaticon-rupee1:before {
+	content: "\e04d";
+}
+.flaticon-show8:before {
+	content: "\e04e";
+}
+.flaticon-sun92:before {
+	content: "\e04f";
+}
+.flaticon-telephone5:before {
+	content: "\e050";
+}
+.flaticon-text70:before {
+	content: "\e051";
+}
+.flaticon-textfile4:before {
+	content: "\e052";
+}
+.flaticon-two396:before {
+	content: "\e053";
+}
+.flaticon-usb:before {
+	content: "\e054";
+}
+.flaticon-wallet11:before {
+	content: "\e055";
+}
+.flaticon-washing11:before {
+	content: "\e056";
+}
+.flaticon-wifi111:before {
+	content: "\e057";
+}
+.flaticon-work4:before {
+	content: "\e058";
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Lato-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Lato-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/Lato-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/Lato-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/Lato-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/Lato-Boldtalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 900;
+  src: url("../fonts/Lato-Italic.ttf") format("truetype");
+}

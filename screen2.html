@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wiire.Me</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+ <link rel="stylesheet" href="css/font-awesome.css">  
+    <link href="css/wiire.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+     <link rel="stylesheet" href="css/fonts.css" />
+ 	<script src="js/jquery.min.js"></script>
+<link rel="stylesheet" href="css/animate.min.css">
+ 
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+    
+    <script>
+$(document).ready(function(){
+   $("#checkbox-1a").click(function(){
+    $("#electricity").toggle();
+});
+
+   $("#checkbox-2a").click(function(){
+    $("#plumbing").toggle();
+});
+
+   $("#checkbox-3a").click(function(){
+    $("#cable").toggle();
+});
+
+   $("#checkbox-5a").click(function(){
+    $("#lpg").toggle();
+});
+
+   $("#checkbox-6a").click(function(){
+    $("#internet").toggle();
+});
+
+   $("#checkbox-7a").click(function(){
+    $("#moving").toggle();
+});
+
+   $("#checkbox-8a").click(function(){
+    $("#whitewash").toggle();
+});
+});
+
+</script> 
+   
+
+    
+</head>
+<body class="pages-overlay">
+
+<div  data-role="page" class="yellow-page">	
+
+<div data-role="header controlgroup" class="top-bar ui-header-fixed">
+  <a href="#leftpanel3" class="ui-link ui-btn ui-btn-left top-icon" data-iconpos="notext"><i class="fa fa-bars"></i></a>  
+	<div data-type="horizontal" class="header-title">
+      <h1 class="small-logo"><img src="images/logo.png"></h1>
+  		<h1 class="page-title">Personal Information</h1>
+    </div>
+  <a href="#" class="ui-link ui-btn ui-btn-right top-icon" data-iconpos="notext"><i class="fa fa-ellipsis-v"></i></a>  
+ </div><!-- /header -->
+
+	<div role="main" class="ui-content yellow-container">
+   
+    <ul id="breadcrumbs" class="breadcrumbs">
+	<li><a href="#" target="_blank">Personal Info</a></li>
+     &nbsp; / &nbsp;    
+	<li><a href="#" class="current" target="_blank">Services</a></li>
+</ul>
+    
+    
+    <div class="white-container animated fadeInRight">
+    
+		<h2>Select the services that you provide.</h2>
+        
+
+<fieldset data-role="controlgroup">
+    <input name="checkbox-1a" id="checkbox-1a" type="checkbox">
+    <label for="checkbox-1a">Electricity</label>
+    
+     <div class="form-group select-field" id="electricity" style="display:none;">      
+     <label for="select-choice-1" class="select ui-hidden-accessible">Choose your Specialisation</label>	
+<select name="select-choice-1" id="select-choice-1" multiple="multiple" data-native-menu="false" placeholder="Electricity" class="checkbox-pos">
+    <option>Choose your Specialisation</option>
+    <option value="">AC Repair</option>
+    <option value="">Fridge Installation</option>
+    <option value="">Fan Repair</option>
+    <option value="">Inverter Repair</option>
+    <option value="">Wiring Problem</option>
+</select>
+
+       </div>  
+  
+    <input name="checkbox-2a" id="checkbox-2a" type="checkbox">
+    <label for="checkbox-2a">Plumbing</label>
+    
+         <div class="form-group select-field" id="plumbing" style="display:none;">      
+     <label for="select-choice-2" class="select ui-hidden-accessible">Choose your Specialisation</label>	
+<select name="select-choice-2" id="select-choice-2" multiple="multiple" data-native-menu="false" placeholder="Plumbing" class="checkbox-pos">
+    <option>Choose your Specialisation</option>
+    <option value="">Tap Changing</option>
+    <option value="">Water Tank Installation</option>
+    <option value="">Tunnel Cleaning</option>
+    <option value="">Tap / Shower fixing</option>
+</select>
+
+       </div> 
+       
+    <input name="checkbox-3a" id="checkbox-3a" type="checkbox">
+    <label for="checkbox-3a">Cable Operator</label>
+    
+     <div class="form-group select-field" id="cable" style="display:none;">     
+     <label for="select-choice-3" class="select ui-hidden-accessible">Choose your Specialisation</label>	
+<select name="select-choice-3" id="select-choice-3" multiple="multiple" data-native-menu="false" placeholder="Cable Operator" class="checkbox-pos">
+    <option>Choose your Specialisation</option>
+    <option value="">Cable Changing</option>
+    <option value="">Set Top Box Repair</option>
+    <option value="">Set Top Box Installation</option>
+    <option value="">Dummy Text</option>
+</select>
+
+       </div> 
+       
+       
+    <input name="checkbox-4a" id="checkbox-4a" type="checkbox">
+    <label for="checkbox-4a">Pest Control</label>
+           
+       
+    <input name="checkbox-5a" id="checkbox-5a" type="checkbox">
+    <label for="checkbox-5a">LPG Provider</label>
+    
+     <div class="form-group select-field" id="lpg" style="display:none;">      
+     <label for="select-choice-5" class="select ui-hidden-accessible">Choose your Specialisation</label>	
+<select name="select-choice-5" id="select-choice-5" multiple="multiple" data-native-menu="false" placeholder="LPG Provider" class="checkbox-pos">
+    <option>Choose your Specialisation</option>
+    <option value="">Refill Cylinder</option>
+    <option value="">Pipe Line Installation</option>
+    <option value="">Change the Gas Pipe</option>
+</select>
+
+       </div> 
+       
+    <input name="checkbox-6a" id="checkbox-6a" type="checkbox">
+    <label for="checkbox-6a">Internet Services</label>
+    
+     <div class="form-group select-field" id="internet" style="display:none;">      
+     <label for="select-choice-6" class="select ui-hidden-accessible">Choose your Specialisation</label>	
+<select name="select-choice-6" id="select-choice-6" multiple="multiple" data-native-menu="false" placeholder="Internet Services" class="checkbox-pos">
+    <option>Choose your Specialisation</option>
+    <option value="">Setup a Broadband Connection</option>
+    <option value="">Router Problem</option>
+    <option value="">Dummy Text</option>
+    <option value="">Dummy Text</option>
+    <option value="">Dummy Text</option>
+</select>
+
+       </div> 
+       
+       
+    <input name="checkbox-7a" id="checkbox-7a" type="checkbox">
+    <label for="checkbox-7a">Movers & Packers</label>
+    
+     <div class="form-group select-field" id="moving" style="display:none;">    
+     <label for="select-choice-7" class="select ui-hidden-accessible">Choose your Specialisation</label>	
+<select name="select-choice-7" id="select-choice-7" multiple="multiple" data-native-menu="false" placeholder="Movers & Packers" class="checkbox-pos">
+    <option>Choose your Specialisation</option>
+    <option value="">Packing</option>
+    <option value="">Transportation</option>
+    <option value="">Installtion & Fixing</option>
+    <option value="">Cleaning</option>
+    <option value="">Repairing</option>
+</select>
+
+       </div> 
+       
+       
+    <input name="checkbox-8a" id="checkbox-8a" type="checkbox">
+    <label for="checkbox-8a">Whitewash/Paint</label>
+    
+     <div class="form-group select-field" id="whitewash" style="display:none;">     
+     <label for="select-choice-8" class="select ui-hidden-accessible">Choose your Specialisation</label>	
+<select name="select-choice-8" id="select-choice-8" multiple="multiple" data-native-menu="false" placeholder="Whitewash / Paint" class="checkbox-pos">
+    <option>Choose your Specialisation</option>
+    <option value="">Washproof Paint</option>
+    <option value="">Wall Paper</option>
+    <option value="">Polishing Doors</option>
+    <option value="">Whitewash</option>
+    <option value="">Plaster of Paris</option>
+</select>
+
+       </div> 
+       
+       
+</fieldset>
+  
+<form method="get" action="screen4.html" class="page-button" target="_blank" data-transition="slidefade">
+  <button class="ui-btn ui-btn-b ui-corner-all">Next</button>
+</form>
+      
+      </div>
+        
+	</div><!-- /content -->
+
+<div data-role="navbar"  class="bottom-bar ui-footer-fixed">
+    <ul>
+                <li><a href="javascript: history.go(-1)" target="_blank" data-transition="slidefade"><i class="fa fa-arrow-circle-left"></i>Back</a></li>
+        <li><a href="screen1.html" target="_blank" data-transition="slidefade"><i class="fa fa-home"></i>Home</a></li>
+    </ul>
+</div>
+
+	    <div data-role="panel" data-theme="b" id="leftpanel3" class="menu-panel" data-position="left" data-display="overlay">
+                
+        <ul data-role="listview" class="menu-opt">
+            <li class="user-pic" id="user-pic"><a href="profile.html" target="_blank"><img src="images/contractor-photo.png" class="contractor-pic"><p>Contractor Name</p></a></li>
+                <li><a href="jobs1.html" target="_blank">My Jobs</a></li>
+               <li><a href="manage-team1.html" target="_blank">Manage Team</a></li>
+                <li><a href="services.html" target="_blank">Services</a></li>
+                <li><a href="work-areas.html" target="_blank">Work Areas</a></li>                
+                <li><a href="payment-details.html" target="_blank">Payment Details</a></li>
+                <li><a href="#">Logout</a></li>
+    
+            </ul>
+    </div><!-- /panel -->
+    
+    
+</div><!-- /page -->
+
+        
+
+</body>
+</html>

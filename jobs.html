@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wiire.Me</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+ 	<link rel="stylesheet" href="css/font-awesome.css">  
+    <link href="css/wiire.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/animate.min.css">
+ 	
+ 	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-field.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+    
+    <script>
+$(document).ready(function(){
+	$("#job-info").click(function(){
+    $("#currnet-job").slideToggle();
+	$("#job").text('Hide Job Details');	
+});
+	$("#btnDel").click(function(){
+    $("#job-info").remove();
+	});
+});
+</script>
+    
+</head>
+<body class="pages-overlay">
+	<div  data-role="page" class="yellow-page">
+    	
+		<div data-role="header controlgroup" class="top-bar ui-header-fixed">
+  			<a href="#leftpanel3" class="ui-link ui-btn ui-btn-left top-icon" data-iconpos="notext"><i class="fa fa-bars"></i></a>  
+			<div data-type="horizontal" class="header-title">
+      			<h1 class="small-logo"><img src="images/logo.png"></h1>
+  				<h1 class="page-title">My Jobs</h1>
+   			</div>
+  			<a href="#" class="ui-link ui-btn ui-btn-right top-icon" data-iconpos="notext"><i class="fa fa-ellipsis-v"></i></a>  
+ 		</div><!-- /header -->
+
+		<div role="main" class="ui-content yellow-container">
+       		<ul id="breadcrumbs" class="breadcrumbs">
+				<li><a href="#" target="_blank"><i class="fa fa-home"></i></a></li>
+    			&nbsp; / &nbsp;
+				<li><a href="#" class="current" target="_blank">My Jobs</a></li>
+			</ul>
+    		<div class="menu-white-container animated fadeInLeft" id="member">
+            
+				<div id="container" data-role="tabs" class="tabs">
+    			<div data-role="navbar" class="tab-bar">
+        			<ul class="tabs-container">
+            			<li><a data-target="1" href="#one">All</a></li>
+            			<li><a data-target="2" href="#two">New</a></li>
+            			<li><a data-target="3" href="#three">Ongoing</a></li>
+            			<li><a data-target="4" href="#four">Done</a></li>
+        			</ul>
+    			</div>
+    			<div id="slider">
+            <div id="one">
+            	<input data-type="search" id="filter-job-input" class="filter-job">
+   		 		<ul class="member-name all-jobs" data-filter="true" data-input="#filter-job-input">
+                     <li id="job-info"><a href="#" class="name">e-ref-122</a>
+                     	<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="del-member"><i class="fa fa-trash-o"></i></a>
+                            <div class="job-detail"><a href="#" target="_blank" id="job">View Job Details</a>
+                            <div id="currnet-job" style="display:none;">
+                            <ul class="details">                           
+                            <li><span class="special">Status:</span> Done</li>   
+                            <li><span class="special">Assigned to:</span> Labour9 Name</li>
+                            <li><span class="special">Labour Phone:</span> 999 999 9999</li>
+    						<li><span class="special">Started at: </span>10th June 2015</li>
+                            <li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Amount to be Paid:</span> Rs.2000/-only</li> 
+                            <li><span class="special">Advance Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                         
+                            <li><span class="special">Days/Time Alloted:</span> 10 Days</li>
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Customer Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>                         
+                            <li><span class="special">Feedback:</span> Positive</li> 
+                            </span>                         
+    					</ul>
+                            </div>
+                            </div>
+                            </li>
+                            <li id="job-info"><a href="#" class="name">e-ref-121</a>
+                     	<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="del-member"><i class="fa fa-trash-o"></i></a>
+                            <div class="job-detail"><a href="#" target="_blank" id="job">View Job Details</a>
+                            <div id="currnet-job" style="display:none;">
+                            <ul class="details">                           
+                            <li><span class="special">Status:</span> Scheduled</li>   
+                            <li><span class="special">Assigned to:</span> Labour9 Name</li>
+    						<li><span class="special">Started at: </span>10th June 2015</li>
+                            <li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Amount to be Paid:</span> Rs.2000/-only</li> 
+                            <li><span class="special">Advance Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                         
+                            <li><span class="special">Days/Time Alloted:</span> 10 Days</li>
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>                         
+                            <li><span class="special">Feedback:</span> ______</li> 
+                            </span>                         
+    					</ul>
+                            </div>
+                            </div>
+                            </li>
+                            <li id="job-info"><a href="#" class="name">e-ref-120</a>
+                     	<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="del-member"><i class="fa fa-trash-o"></i></a>
+                            <div class="job-detail"><a href="#" target="_blank" id="job">View Job Details</a>
+                            <div id="currnet-job" style="display:none;">
+                            <ul class="details">                           
+                            <li><span class="special">Status:</span> Pending</li>   
+                            <li><span class="special">Assigned to:</span> Labour9 Name</li>
+    						<li><span class="special">Started at: </span>10th June 2015</li>
+                            <li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Amount to be Paid:</span> Rs.2000/-only</li> 
+                            <li><span class="special">Advance Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                         
+                            <li><span class="special">Days/Time Alloted:</span> 10 Days</li>
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>                         
+                            <li><span class="special">Feedback:</span> _____</li> 
+                            </span>                         
+    					</ul>
+                            </div>
+                            </div>
+                            </li>
+                            <li id="job-info"><a href="#" class="name">e-ref-119</a>
+                     	<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="del-member"><i class="fa fa-trash-o"></i></a>
+                            <div class="job-detail"><a href="#" target="_blank" id="job">View Job Details</a>
+                            <div id="currnet-job" style="display:none;">
+                            <ul class="details">                           
+                            <li><span class="special">Status:</span> Done</li>   
+                            <li><span class="special">Assigned to:</span> Labour9 Name</li>
+    						<li><span class="special">Started at: </span>10th June 2015</li>
+                            <li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Amount to be Paid:</span> Rs.2000/-only</li> 
+                            <li><span class="special">Advance Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                         
+                            <li><span class="special">Days/Time Alloted:</span> 1 Day</li>
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>                         
+                            <li><span class="special">Feedback:</span> Positive</li> 
+                            </span>                         
+    					</ul>
+                            </div>
+                            </div>
+                            </li>
+                            <li id="job-info"><a href="#" class="name">e-ac-88</a>
+                     	<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="del-member"><i class="fa fa-trash-o"></i></a>
+                            <div class="job-detail"><a href="#" target="_blank" id="job">View Job Details</a>
+                            <div id="currnet-job" style="display:none;">
+                            <ul class="details">                           
+                            <li><span class="special">Status:</span> Done</li>   
+                            <li><span class="special">Assigned to:</span> Labour9 Name</li>
+    						<li><span class="special">Started at: </span>10th June 2015</li>
+                            <li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Amount to be Paid:</span> Rs.2000/-only</li> 
+                            <li><span class="special">Advance Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                         
+                            <li><span class="special">Days/Time Alloted:</span> 2 Days</li>
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>                         
+                            <li><span class="special">Feedback:</span> Negative</li> 
+                            </span>                         
+    					</ul>
+                            </div>
+                            </div>
+                            </li>
+                            <li id="job-info"><a href="#" class="name">e-ac-87</a>
+                     	<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="del-member"><i class="fa fa-trash-o"></i></a>
+                            <div class="job-detail"><a href="#" target="_blank" id="job">View Job Details</a>
+                            <div id="currnet-job" style="display:none;">
+                            <ul class="details">                           
+                            <li><span class="special">Status:</span> Done</li>   
+                            <li><span class="special">Assigned to:</span> Labour9 Name</li>
+    						<li><span class="special">Started at: </span>10th June 2015</li>
+                            <li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Amount to be Paid:</span> Rs.2000/-only</li> 
+                            <li><span class="special">Advance Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                         
+                            <li><span class="special">Days/Time Alloted:</span> 10 Days</li>
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>                         
+                            <li><span class="special">Feedback:</span> Positive</li> 
+                            </span>                         
+    					</ul>
+                            </div>
+                            </div>
+                            </li>
+                            <li id="job-info"><a href="#" class="name">e-ac-86</a>
+                     	<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="del-member"><i class="fa fa-trash-o"></i></a>
+                            <div class="job-detail"><a href="#" target="_blank" id="job">View Job Details</a>
+                            <div id="currnet-job" style="display:none;">
+                            <ul class="details">                           
+                            <li><span class="special">Status:</span> Done</li>   
+                            <li><span class="special">Assigned to:</span> Labour9 Name</li>
+    						<li><span class="special">Started at: </span>10th June 2015</li>
+                            <li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Amount to be Paid:</span> Rs.2000/-only</li> 
+                            <li><span class="special">Advance Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                         
+                            <li><span class="special">Days/Time Alloted:</span> 10 Days</li>
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>                         
+                            <li><span class="special">Feedback:</span> Positive</li> 
+                            </span>                         
+    					</ul>
+                            </div>
+                            </div>
+                            </li>
+                            <li id="job-info"><a href="#" class="name">e-ref-118</a>
+                     	<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="del-member"><i class="fa fa-trash-o"></i></a>
+                            <div class="job-detail"><a href="#" target="_blank" id="job">View Job Details</a>
+                            <div id="currnet-job" style="display:none;">
+                            <ul class="details">                           
+                            <li><span class="special">Status:</span> Done</li>   
+                            <li><span class="special">Assigned to:</span> Labour9 Name</li>
+    						<li><span class="special">Started at: </span>10th June 2015</li>
+                            <li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Amount to be Paid:</span> Rs.2000/-only</li> 
+                            <li><span class="special">Advance Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                         
+                            <li><span class="special">Days/Time Alloted:</span> 10 Days</li>
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>                         
+                            <li><span class="special">Feedback:</span> Positive</li> 
+                            </span>                         
+    					</ul>
+                            </div>
+                            </div>
+                            </li>
+                            <li id="job-info"><a href="#" class="name">e-ref-117</a>
+                     	<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="del-member"><i class="fa fa-trash-o"></i></a>
+                            <div class="job-detail"><a href="#" target="_blank" id="job">View Job Details</a>
+                            <div id="currnet-job" style="display:none;">
+                            <ul class="details">                           
+                            <li><span class="special">Status:</span> Done</li>   
+                            <li><span class="special">Assigned to:</span> Labour9 Name</li>
+    						<li><span class="special">Started at: </span>10th June 2015</li>
+                            <li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Amount to be Paid:</span> Rs.2000/-only</li> 
+                            <li><span class="special">Advance Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                         
+                            <li><span class="special">Days/Time Alloted:</span> 10 Days</li>
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>                         
+                            <li><span class="special">Feedback:</span> Positive</li> 
+                            </span>                         
+    					</ul>
+                            </div>
+                            </div>
+                            </li>
+                            <li id="job-info"><a href="#" class="name">e-ac-85</a>
+                     	<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="del-member"><i class="fa fa-trash-o"></i></a>
+                            <div class="job-detail"><a href="#" target="_blank" id="job">View Job Details</a>
+                            <div id="currnet-job" style="display:none;">
+                            <ul class="details">                           
+                            <li><span class="special">Status:</span> Done</li>   
+                            <li><span class="special">Assigned to:</span> Labour9 Name</li>
+    						<li><span class="special">Started at: </span>10th June 2015</li>
+                            <li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Amount to be Paid:</span> Rs.2000/-only</li> 
+                            <li><span class="special">Advance Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                         
+                            <li><span class="special">Days/Time Alloted:</span> 10 Days</li>
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>                         
+                            <li><span class="special">Feedback:</span> Positive</li> 
+                            </span>                         
+    					</ul>
+                            </div>
+                            </div>
+                            </li>
+    			</ul>
+    			<!-- rest of the panel content -->
+  			</div>
+  			<div id="two">
+  				<ul class="member-name all-jobs">
+                     <li id="job-info"><a href="#" class="name">e-ref-122</a>
+                            <div class="job-detail"><a href="#" target="_blank" id="job">View Job Details</a>
+                            <div id="currnet-job" style="display:none;">
+                            <ul class="details">                           
+                            <li><span class="special">Status:</span> Scheduled</li>   
+                            <li><span class="special">Assigned to:</span> Labour9 Name</li>
+                            <li><span class="special">Labour Phone:</span> 999 999 9999</li>
+    						<li><span class="special">Started at: </span>10th June 2015</li>
+                            <li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Amount to be Paid:</span> Rs.2000/-only</li> 
+                            <li><span class="special">Advance Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                         
+                            <li><span class="special">Days/Time Alloted:</span> 10 Days</li>
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Customer Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>                         
+                            <li><span class="special">Feedback:</span> _____</li> 
+                            </span>                         
+    					</ul>
+                            </div>
+                            </div>
+                            </li>
+                            <li id="job-info"><a href="#" class="name">e-ref-121</a>
+                            <div class="job-detail"><a href="#" target="_blank" id="job">View Job Details</a>
+                            <div id="currnet-job" style="display:none;">
+                            <ul class="details">                           
+                            <li><span class="special">Status:</span> Scheduled</li>   
+                            <li><span class="special">Assigned to:</span> Labour9 Name</li>
+                            <li><span class="special">Labour Phone:</span> 999 999 9999</li>
+    						<li><span class="special">Started at: </span>10th June 2015</li>
+                            <li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Amount to be Paid:</span> Rs.2000/-only</li> 
+                            <li><span class="special">Advance Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                         
+                            <li><span class="special">Days/Time Alloted:</span> 10 Days</li>
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Customer Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>                         
+                            <li><span class="special">Feedback:</span> _____</li> 
+                            </span>                         
+    					</ul>
+                            </div>
+                            </div>
+                            </li>
+                            <li id="job-info"><a href="#" class="name">e-ref-120</a>
+                            <div class="job-detail"><a href="#" target="_blank" id="job">View Job Details</a>
+                            <div id="currnet-job" style="display:none;">
+                            <ul class="details">                           
+                            <li><span class="special">Status:</span> Scheduled</li>   
+                            <li><span class="special">Assigned to:</span> Labour9 Name</li>
+                            <li><span class="special">Labour Phone:</span> 999 999 9999</li>
+    						<li><span class="special">Started at: </span>10th June 2015</li>
+                            <li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Amount to be Paid:</span> Rs.2000/-only</li> 
+                            <li><span class="special">Advance Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                         
+                            <li><span class="special">Days/Time Alloted:</span> 10 Days</li>
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Customer Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>                         
+                            <li><span class="special">Feedback:</span> _____</li> 
+                            </span>                         
+    					</ul>
+                            </div>
+                            </div>
+                            </li>
+    			</ul>
+    			<!-- rest of the panel content -->
+  			</div>
+  			<div id="three">
+  				<ul class="member-name all-jobs">
+                     <li id="job-info"><a href="#" class="name">e-ref-119</a>
+                            <div class="job-detail"><a href="#" target="_blank" id="job">View Job Details</a>
+                            <div id="currnet-job" style="display:none;">
+                            <ul class="details">                           
+                            <li><span class="special">Status:</span> Ongoing</li>   
+                            <li><span class="special">Assigned to:</span> Labour9 Name</li>
+                            <li><span class="special">Labour Phone:</span> 999 999 9999</li>
+    						<li><span class="special">Started at: </span>10th June 2015</li>
+                            <li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Amount to be Paid:</span> Rs.2000/-only</li> 
+                            <li><span class="special">Advance Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                         
+                            <li><span class="special">Days/Time Alloted:</span> 10 Days</li>
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Customer Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>                         
+                            <li><span class="special">Feedback:</span> _____</li> 
+                            </span>                         
+    					</ul>
+                            </div>
+                            </div>
+                            </li>
+                            <li id="job-info"><a href="#" class="name">e-ref-118</a>
+                            <div class="job-detail"><a href="#" target="_blank" id="job">View Job Details</a>
+                            <div id="currnet-job" style="display:none;">
+                            <ul class="details">                           
+                            <li><span class="special">Status:</span> Ongoing</li>   
+                            <li><span class="special">Assigned to:</span> Labour9 Name</li>
+                            <li><span class="special">Labour Phone:</span> 999 999 9999</li>
+    						<li><span class="special">Started at: </span>10th June 2015</li>
+                            <li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Amount to be Paid:</span> Rs.2000/-only</li> 
+                            <li><span class="special">Advance Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                         
+                            <li><span class="special">Days/Time Alloted:</span> 10 Days</li>
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Customer Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>                         
+                            <li><span class="special">Feedback:</span> _____</li> 
+                            </span>                         
+    					</ul>
+                            </div>
+                            </div>
+                            </li>
+                            <li id="job-info"><a href="#" class="name">e-ref-117</a>
+                            <div class="job-detail"><a href="#" target="_blank" id="job">View Job Details</a>
+                            <div id="currnet-job" style="display:none;">
+                            <ul class="details">                           
+                            <li><span class="special">Status:</span> Ongoing</li>   
+                            <li><span class="special">Assigned to:</span> Labour9 Name</li>
+                            <li><span class="special">Labour Phone:</span> 999 999 9999</li>
+    						<li><span class="special">Started at: </span>10th June 2015</li>
+                            <li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Amount to be Paid:</span> Rs.2000/-only</li> 
+                            <li><span class="special">Advance Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                         
+                            <li><span class="special">Days/Time Alloted:</span> 10 Days</li>
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Customer Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>                         
+                            <li><span class="special">Feedback:</span> _____</li> 
+                            </span>                         
+    					</ul>
+                            </div>
+                            </div>
+                            </li>
+    			</ul>
+    			<!-- rest of the panel content -->
+  			</div>
+    		<div id="four">
+    			<ul class="member-name all-jobs">
+                     <li id="job-info"><a href="#" class="name">e-ac-88</a>
+                            <div class="job-detail"><a href="#" target="_blank" id="job">View Job Details</a>
+                            <div id="currnet-job" style="display:none;">
+                            <ul class="details">                           
+                            <li><span class="special">Status:</span> Done</li>   
+                            <li><span class="special">Assigned to:</span> Labour9 Name</li>
+                            <li><span class="special">Labour Phone:</span> 999 999 9999</li>
+    						<li><span class="special">Started at: </span>10th June 2015</li>
+                            <li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Amount to be Paid:</span> Rs.2000/-only</li> 
+                            <li><span class="special">Advance Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                         
+                            <li><span class="special">Days/Time Alloted:</span> 10 Days</li>
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Customer Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>                         
+                            <li><span class="special">Feedback:</span> _____</li> 
+                            </span>                         
+    					</ul>
+                            </div>
+                            </div>
+                            </li>
+                            <li id="job-info"><a href="#" class="name">e-ac-87</a>
+                            <div class="job-detail"><a href="#" target="_blank" id="job">View Job Details</a>
+                            <div id="currnet-job" style="display:none;">
+                            <ul class="details">                           
+                            <li><span class="special">Status:</span> Done</li>   
+                            <li><span class="special">Assigned to:</span> Labour9 Name</li>
+                            <li><span class="special">Labour Phone:</span> 999 999 9999</li>
+    						<li><span class="special">Started at: </span>10th June 2015</li>
+                            <li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Amount to be Paid:</span> Rs.2000/-only</li> 
+                            <li><span class="special">Advance Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                         
+                            <li><span class="special">Days/Time Alloted:</span> 10 Days</li>
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Customer Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>                         
+                            <li><span class="special">Feedback:</span> _____</li> 
+                            </span>                         
+    					</ul>
+                            </div>
+                            </div>
+                            </li>
+                            <li id="job-info"><a href="#" class="name">e-ac-86</a>
+                     		<div class="job-detail"><a href="#" target="_blank" id="job">View Job Details</a>
+                            <div id="currnet-job" style="display:none;">
+                            <ul class="details">                           
+                            <li><span class="special">Status:</span> Done</li>   
+                            <li><span class="special">Assigned to:</span> Labour9 Name</li>
+                            <li><span class="special">Labour Phone:</span> 999 999 9999</li>
+    						<li><span class="special">Started at: </span>10th June 2015</li>
+                            <li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Amount to be Paid:</span> Rs.2000/-only</li> 
+                            <li><span class="special">Advance Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                         
+                            <li><span class="special">Days/Time Alloted:</span> 10 Days</li>
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Customer Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>                         
+                            <li><span class="special">Feedback:</span> _____</li> 
+                            </span>                         
+    					</ul>
+                            </div>
+                            </div>
+                            </li>
+    			</ul>
+                <!-- rest of the panel content -->
+             </div>
+        </div>
+     </div>
+   </div>
+ </div>
+<!-- /content -->
+
+	<div data-role="navbar"  class="bottom-bar ui-footer-fixed">
+   		<ul>
+            <li><a href="javascript: history.go(-1)" target="_blank" data-transition="slidefade"><i class="fa fa-arrow-circle-left"></i>Back</a></li>
+        	<li><a href="screen1.html" target="_blank" data-transition="slidefade"><i class="fa fa-home"></i>Home</a></li>
+    	</ul>
+	</div>
+	<div data-role="panel" data-theme="b" id="leftpanel3" class="menu-panel" data-position="left" data-display="overlay">
+        <ul data-role="listview" class="menu-opt">
+            <li class="user-pic" id="user-pic"><a href="profile.html" target="_blank"><img src="images/contractor-photo.png" class="contractor-pic"><p>Contractor Name</p></a></li>
+            <li><a href="jobs1.html" target="_blank">My Jobs</a></li>
+            <li><a href="manage-team1.html" target="_blank">Manage Team</a></li>
+            <li><a href="services.html" target="_blank">Services</a></li>
+            <li><a href="work-areas.html" target="_blank">Work Areas</a></li>                
+            <li><a href="payment-details.html" target="_blank">Payment Details</a></li>
+            <li><a href="#">Logout</a></li>
+         </ul>
+    </div><!-- /panel -->
+    <div data-role="popup" id="popupDialog" data-dismissible="false" class="popupDialog">
+    	<div class="confirm-delete">
+    		<h2>Delete?</h2>
+        	<p>Are you sure you want to delete this Job?</p>
+        	<hr>
+         		<div class="del-cancel">
+                	<a href="#" class="ui-btn ui-corner-all ui-btn-inline cancel-btn" data-rel="back">Cancel</a>
+         			<a href="#" id="btnDel" class="ui-btn ui-corner-all ui-btn-inline" data-rel="back">Delete</a>
+                </div>
+            </div>
+        </div>  
+</div><!-- /page -->
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wiire.Me</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+ <link rel="stylesheet" href="css/font-awesome.css">  
+    <link href="css/wiire.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+     <link rel="stylesheet" href="css/fonts.css" />
+ 	<script src="js/jquery.min.js"></script>
+<link rel="stylesheet" href="css/animate.min.css">
+ 
+	<script src="js/jquery-field.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+     
+       <script>
+$(document).ready(function(){
+   $("#more-list").click(function(){
+    $("#remaining-list").slideToggle();
+});
+});
+</script>
+ 
+     
+</head>
+<body class="pages-overlay">
+
+<div  data-role="page" class="yellow-page">	
+
+<div data-role="header controlgroup" class="top-bar ui-header-fixed">
+  <a href="#leftpanel3" class="ui-link ui-btn ui-btn-left top-icon" data-iconpos="notext"><i class="fa fa-bars"></i></a>  
+	<div data-type="horizontal" class="header-title">
+      <h1 class="small-logo"><img src="images/logo.png"></h1>
+  		<h1 class="page-title">Manage Team</h1>
+    </div>
+  <a href="#" class="ui-link ui-btn ui-btn-right top-icon" data-iconpos="notext"><i class="fa fa-ellipsis-v"></i></a>  
+ </div><!-- /header -->
+
+	<div role="main" class="ui-content yellow-container">
+    
+        <ul id="breadcrumbs" class="breadcrumbs">
+	<li><a href="#" target="_blank"><i class="fa fa-home"></i></a></li>
+    &nbsp; / &nbsp;
+	<li><a href="#" class="current" target="_blank">Past Jobs</a></li>
+</ul>
+        
+        
+    <div class="menu-white-container animated fadeInRight">   
+      <!--   <hr class="top-space"> -->
+
+         
+         <div class="member-name" id="member">
+       <div class="member-name-details">
+         <p class="profile profile-name">Labour Name <span class="special">(6)</span></p>
+       <div class="edit job-back">
+       <a href="javascript: history.go(-1)" class="pswd-btn" target="_blank">Back</a></div>
+         </div>
+         <input data-type="search" id="filter-member-input" class="filter-member">
+         <ul class="member-name" data-filter="true" data-input="#filter-member-input">
+         <li id="more-list">
+         <ul class="details">
+    						<li><a href="#" class="name"><span class="special">15th June 2015</span></a>
+    						<li><span class="special">Job ID:</span> e-ref-122</li>
+                            <span id="remaining-list" style="display:none;" class="remaining-list">
+    						<li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                                                     
+                            <li><span class="special">Feedback:</span> Positive</li> 
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>
+                            </span>                         
+                            </li>
+    					</ul></li>
+                            <li id="more-list">
+         <ul class="details">
+    						<li><a href="#" class="name"><span class="special">7th June 2015</span></a>
+    						<li><span class="special">Job ID:</span> e-ref-121</li>
+                            <span id="remaining-list" style="display:none;" class="remaining-list">
+    						<li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                                                     
+                            <li><span class="special">Feedback:</span> Positive</li> 
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>
+                            </span>                         
+                            </li>
+    					</ul></li>
+                            <li id="more-list">
+         <ul class="details">
+    						<li><a href="#" class="name"><span class="special">5th June 2015</span></a>
+    						<li><span class="special">Job ID:</span> e-ac-88</li>
+                            <span id="remaining-list" style="display:none;" class="remaining-list">
+    						<li><span class="special">Category:</span> Plumbing</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                                                     
+                            <li><span class="special">Feedback:</span> Positive</li> 
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>
+                            </span>                         
+                            </li>
+    					</ul></li>
+                           <li id="more-list">
+         <ul class="details">
+    						<li><a href="#" class="name"><span class="special">1st June 2015</span></a>
+    						<li><span class="special">Job ID:</span> e-ac-87</li>
+                            <span id="remaining-list" style="display:none;" class="remaining-list">
+    						<li><span class="special">Category:</span> Plumbing</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                                                     
+                            <li><span class="special">Feedback:</span> Positive</li> 
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>
+                            </span>                         
+                            </li>
+    					</ul></li>
+                            <li id="more-list">
+         <ul class="details">
+    						<li><a href="#" class="name"><span class="special">1st June 2015</span></a>
+    						<li><span class="special">Job ID:</span> e-ref-120</li>
+                            <span id="remaining-list" style="display:none;" class="remaining-list">
+    						<li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                                                     
+                            <li><span class="special">Feedback:</span> Positive</li> 
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>
+                            </span>                         
+                            </li>
+    					</ul></li>
+                            <li id="more-list">
+         <ul class="details">
+    						<li><a href="#" class="name"><span class="special">30th May 2015</span></a>
+    						<li><span class="special">Job ID:</span> e-ref-119</li>
+                            <span id="remaining-list" style="display:none;" class="remaining-list">
+    						<li><span class="special">Category:</span> Electricity</li>
+                            <li><span class="special">Work:</span> Fridge Repair</li>
+                            <li><span class="special">Payment:</span> Rs.1000/-only</li>                          
+                            <li><span class="special">Mode of Payment:</span> Cash</li>                                                     
+                            <li><span class="special">Feedback:</span> Positive</li> 
+                            <li><span class="special">Name of Customer:</span> Customer Singh</li>
+                            <li><span class="special">Phone:</span> 987 654 3210</li>
+                            <li><span class="special">Address:</span> 123, Yusuf Sarai, Main Market, Delhi</li>
+                            </span>                         
+                            </li>
+    					</ul></li>
+         </div>
+</div>
+  
+       
+    
+        
+	</div><!-- /content -->
+<div data-role="navbar"  class="bottom-bar ui-footer-fixed">
+<!--
+                 <div class="edit-profile" id="edit-profile">
+       <a href="#" id="ext-link-btn" class="ui-link ui-btn ui-corner-all edit-link-btn" data-iconpos="notext"><i class="fa fa-external-link"></i></a>
+       <div class="external-bottom-links" id="external-links" style="display:none;">
+       <a href="#" id="edit-member" class="ui-link ui-btn ui-corner-all edit-btns edit-btn2" data-iconpos="notext"><i class="fa fa-pencil"></i></a>
+       <a href="change-password.html" id="change-password"class="ui-link ui-btn ui-corner-all edit-btns edit-btn1" data-iconpos="notext" target="_blank"><i class="fa fa-key"></i>
+</a>
+         </div></div>
+-->
+                   <ul>
+                <li><a href="javascript: history.go(-1)" target="_blank" data-transition="slidefade"><i class="fa fa-arrow-circle-left"></i>Back</a></li>
+        <li><a href="screen1.html" target="_blank" data-transition="slidefade"><i class="fa fa-home"></i>Home</a></li>
+    </ul>
+</div>
+
+	    <div data-role="panel" data-theme="b" id="leftpanel3" class="menu-panel" data-position="left" data-display="overlay">
+                
+        <ul data-role="listview" class="menu-opt">
+            <li class="user-pic" id="user-pic"><a href="profile.html" target="_blank"><img src="images/contractor-photo.png" class="contractor-pic"><p>Contractor Name</p></a></li>
+                <li><a href="jobs1.html" target="_blank">My Jobs</a></li>
+               <li><a href="manage-team1.html" target="_blank">Manage Team</a></li>
+                <li><a href="services.html" target="_blank">Services</a></li>
+                <li><a href="work-areas.html" target="_blank">Work Areas</a></li>                
+                <li><a href="payment-details.html" target="_blank">Payment Details</a></li>
+                <li><a href="#">Logout</a></li>
+    
+            </ul>
+    </div><!-- /panel -->
+    
+    
+</div><!-- /page -->
+
+        
+
+</body>
+</html>

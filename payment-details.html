@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wiire.Me</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+ <link rel="stylesheet" href="css/font-awesome.css">  
+    <link href="css/wiire.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+     <link rel="stylesheet" href="css/fonts.css" />
+ 	<script src="js/jquery.min.js"></script>
+<link rel="stylesheet" href="css/animate.min.css">
+ 
+	<script src="js/jquery-field.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+     
+       <script>
+$(document).ready(function(){
+$("#ext-link-btn").click(function(){
+    $("#external-links").fadeToggle();
+    });
+});
+</script>
+ 
+     
+</head>
+<body class="pages-overlay">
+
+<div  data-role="page" class="yellow-page">	
+
+<div data-role="header controlgroup" class="top-bar ui-header-fixed">
+  <a href="#leftpanel3" class="ui-link ui-btn ui-btn-left top-icon" data-iconpos="notext"><i class="fa fa-bars"></i></a>  
+	<div data-type="horizontal" class="header-title">
+      <h1 class="small-logo"><img src="images/logo.png"></h1>
+  		<h1 class="page-title">Payment Details</h1>
+    </div>
+  <a href="#" class="ui-link ui-btn ui-btn-right top-icon" data-iconpos="notext"><i class="fa fa-ellipsis-v"></i></a>  
+ </div><!-- /header -->
+
+	<div role="main" class="ui-content yellow-container">
+    
+        <ul id="breadcrumbs" class="breadcrumbs">
+	<li><a href="#" target="_blank"><i class="fa fa-home"></i></a></li>
+    &nbsp; / &nbsp;
+	<li><a href="#" class="current" target="_blank">Payment Details</a></li>
+</ul>
+        
+        
+    <div class="menu-white-container animated fadeInLeft">   
+ 
+
+       
+         <ul class="payment" id="payment">
+         <li><span class="special">No. of Jobs Performed:</span> 23</li>
+         <li><span class="special">Total Amount Earned from Jobs:</span> Rs.1,00,000/-</li>
+         <li><span class="special">Commission to be Paid:</span> Rs.50,000/-</li>         
+         <li><span class="special">Nett Earnings:</span> Rs.50,000/-</li> 
+         </ul>
+         </div>
+ 
+ 
+        
+	</div><!-- /content -->
+<div data-role="navbar"  class="bottom-bar ui-footer-fixed">
+                   <ul>
+                <li><a href="javascript: history.go(-1)" target="_blank" data-transition="slidefade"><i class="fa fa-arrow-circle-left"></i>Back</a></li>
+        <li><a href="screen1.html" target="_blank" data-transition="slidefade"><i class="fa fa-home"></i>Home</a></li>
+    </ul>
+</div>
+
+	    <div data-role="panel" data-theme="b" id="leftpanel3" class="menu-panel" data-position="left" data-display="overlay">
+                
+        <ul data-role="listview" class="menu-opt">
+            <li class="user-pic" id="user-pic"><a href="profile.html" target="_blank"><img src="images/contractor-photo.png" class="contractor-pic"><p>Contractor Name</p></a></li>
+                <li><a href="jobs1.html" target="_blank">My Jobs</a></li>
+               <li><a href="manage-team1.html" target="_blank">Manage Team</a></li>
+                <li><a href="services.html" target="_blank">Services</a></li>
+                <li><a href="work-areas.html" target="_blank">Work Areas</a></li>                
+                <li><a href="payment-details.html" target="_blank">Payment Details</a></li>
+                <li><a href="#">Logout</a></li>
+    
+            </ul>
+    </div><!-- /panel -->
+    
+    
+</div><!-- /page -->
+
+        
+
+</body>
+</html>
