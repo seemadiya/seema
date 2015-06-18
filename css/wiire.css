@@ -54,8 +54,6 @@ body, input, select, textarea, button, .ui-btn{
 	margin:5px 0px 10px!important;
 }
 
-
-
 .popupDialog{
 	max-width:300px;
 	text-align:center;
@@ -1482,14 +1480,14 @@ margin: 0 auto; list-style:none;}
 }
 
 .tab-bar ul.tabs-container li a{
-	 background-color: #fec309 !important;
-    border-right: 1px solid #fe0909 !important;
+	 background-color: #fdcd37 !important;
+    border-right: 1px solid rgba(255, 255, 255, .25) !important;
     color: rgba(0, 0, 0, .5) !important;
     font-weight: 700 !important;
     overflow: visible;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding:2px;
     text-decoration: none;
+	font-size:13px!important;
 }
 
 .tab-bar ul.tabs-container li a.current{
@@ -1499,6 +1497,15 @@ margin: 0 auto; list-style:none;}
 .tab-bar ul.tabs-container li:last-child a{
     border: none!important;
 }
+
+.menubar-white-container{
+	background-color:#fdcd37 ;
+	border-radius:3px;	
+	padding:5px!important;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.2)!important;
+	margin:5px 0px 10px!important;
+}
+
 
 .ui-flipswitch-active{
 	background-color:#fec309!important;
